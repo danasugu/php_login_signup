@@ -19,12 +19,7 @@ require 'includes/connect.php';
           }
         ?>
 
-        <form action="includes/login.inc.php" method="POST">
-          <input type="text" name="usernume" placeholder="username">
-          <input type="password" name="password" placeholder="parola">
-          <!-- <button type="submit" name="login" value="login">LogIn</button> -->
-          <input type="submit" value="login">
-        </form>
+
           
           <?php 
               if(isset($_GET['info']) && $_GET['info'] == 'wrongpass'){
