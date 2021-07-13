@@ -26,11 +26,7 @@ require 'includes/connect.php';
           <input type="submit" value="login">
         </form>
           
-          <?php 
-              if(isset($_GET['info']) && $_GET['info'] == 'wrongpass'){
-                echo '<p style="font-size:33px;color:red;">Wrong password!</p>';
-              }
-          ?>
+         
 
         </div>
       </div>
