@@ -13,7 +13,11 @@ require 'includes/connect.php';
         <p>No account? <a href="signup.php">SignUp</a></p>
 
         <!-- verify if we are logged in -->
-       
+        <?php 
+          if (isset($_SESSION['id'])) {
+            echo 'my name is' .$_SESSION['username'];
+          }
+        ?>
 
         <form action="includes/login.inc.php" method="POST">
           <input type="text" name="usernume" placeholder="username">
